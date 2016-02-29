@@ -1,0 +1,4 @@
+public virtual bool IsSatisfiedBy(T obj)
+        {
+            return this.GetExpression().Compile()(obj);
+        }
